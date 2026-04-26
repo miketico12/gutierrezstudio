@@ -5,8 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gutierrez Studio</title>
 
-  <meta name="description" content="Agencia premium de fotografía, video y campañas en Costa Rica. Creamos contenido que atrae clientes.">
-
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
@@ -23,7 +21,7 @@
     <span class="font-semibold">Gutierrez Studio</span>
 
     <div class="flex gap-6 text-sm items-center">
-      <a href="https://instagram.com/gutierrezstudio.co" target="_blank" class="hover:text-gray-300">Instagram</a>
+      <a href="https://instagram.com/gutierrezstudio.co" target="_blank">Instagram</a>
       <a href="https://wa.me/50661161626" class="bg-white text-black px-4 py-2 rounded-full">
         Contactar
       </a>
@@ -31,68 +29,79 @@
   </div>
 </header>
 
-<!-- HERO -->
-<section class="min-h-screen flex flex-col justify-center items-center text-center px-6 pt-24">
+<!-- HERO GRANDE -->
+<section class="h-screen flex items-center justify-center text-center px-6">
 
-  <h1 class="text-4xl md:text-7xl font-bold max-w-4xl leading-tight">
-    Creamos contenido que hace crecer tu negocio
-  </h1>
+  <div>
+    <h1 class="text-5xl md:text-7xl font-bold leading-tight max-w-4xl">
+      Creamos contenido que hace crecer negocios
+    </h1>
 
-  <p class="mt-6 text-gray-400 max-w-xl text-lg">
-    Fotografía, video y campañas para negocios en Costa Rica.
-  </p>
+    <p class="mt-6 text-gray-400 text-lg max-w-xl mx-auto">
+      Fotografía, video y campañas para marcas en Costa Rica
+    </p>
 
-  <div class="mt-10 flex gap-4 flex-wrap justify-center">
+    <div class="mt-10 flex gap-4 justify-center">
+      <a href="https://wa.me/50661161626" class="bg-white text-black px-8 py-4 rounded-full">
+        Agendar
+      </a>
 
-    <a href="https://wa.me/50661161626"
-       class="bg-white text-black px-8 py-4 rounded-full text-lg">
-       Agendar consulta
-    </a>
+      <a href="https://instagram.com/gutierrezstudio.co" target="_blank"
+         class="border border-white px-8 py-4 rounded-full">
+         Ver trabajos
+      </a>
+    </div>
+  </div>
 
-    <a href="https://instagram.com/gutierrezstudio.co"
-       target="_blank"
-       class="border border-white px-8 py-4 rounded-full">
-       Ver trabajos
-    </a>
+</section>
+
+<!-- BLOQUE VISUAL GRANDE -->
+<section class="py-24 px-6">
+
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+
+    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200"
+         class="rounded-2xl">
+
+    <div>
+      <h2 class="text-4xl font-bold">
+        No es solo contenido. Es crecimiento.
+      </h2>
+
+      <p class="mt-6 text-gray-400">
+        No creamos fotos bonitas. Creamos contenido que atrae clientes, mejora tu imagen
+        y posiciona tu negocio en el mercado.
+      </p>
+    </div>
 
   </div>
 
 </section>
 
-<!-- SERVICIOS -->
+<!-- GRID VISUAL -->
+<section class="px-6 pb-24">
+
+  <div class="grid md:grid-cols-3 gap-4 max-w-6xl mx-auto">
+
+    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800" class="rounded-xl">
+    <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7?w=800" class="rounded-xl">
+    <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800" class="rounded-xl">
+
+  </div>
+
+</section>
+
+<!-- SERVICIOS MINIMAL -->
 <section class="py-24 text-center">
 
-  <h2 class="text-3xl md:text-5xl font-bold mb-16">
-    Servicios
-  </h2>
+  <h2 class="text-4xl font-bold mb-12">Servicios</h2>
 
-  <div class="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto px-6">
-
-    <div>
-      <h3 class="text-xl font-semibold">Fotografía</h3>
-      <p class="text-gray-400 mt-2">Imágenes que representan tu marca y venden</p>
-    </div>
-
-    <div>
-      <h3 class="text-xl font-semibold">Video</h3>
-      <p class="text-gray-400 mt-2">Contenido dinámico que capta atención</p>
-    </div>
-
-    <div>
-      <h3 class="text-xl font-semibold">Contenido</h3>
-      <p class="text-gray-400 mt-2">Material constante para redes sociales</p>
-    </div>
-
-    <div>
-      <h3 class="text-xl font-semibold">Campañas</h3>
-      <p class="text-gray-400 mt-2">Publicidad enfocada en resultados reales</p>
-    </div>
-
-    <div>
-      <h3 class="text-xl font-semibold">Estrategia</h3>
-      <p class="text-gray-400 mt-2">Plan digital para crecer tu negocio</p>
-    </div>
-
+  <div class="space-y-6 text-lg text-gray-300">
+    <p>Fotografía</p>
+    <p>Video</p>
+    <p>Contenido para redes</p>
+    <p>Campañas publicitarias</p>
+    <p>Estrategia digital</p>
   </div>
 
 </section>
@@ -100,38 +109,34 @@
 <!-- CLIENTES -->
 <section class="py-24 bg-white text-black text-center">
 
-  <h2 class="text-3xl md:text-5xl font-bold mb-10">
-    Clientes
+  <h2 class="text-4xl font-bold mb-6">
+    Clientes que confían en nosotros
   </h2>
 
   <p class="max-w-xl mx-auto text-gray-600">
-    Hemos trabajado con negocios y organizaciones en Costa Rica como Municipalidad de Sarapiquí, Super Beto, ferreterías y agroveterinarias.
+    Municipalidad de Sarapiquí, Super Beto, ferreterías, agroveterinarias y más.
   </p>
 
 </section>
 
 <!-- TESTIMONIOS -->
-<section class="py-24 text-center">
+<section class="py-24 px-6">
 
-  <h2 class="text-3xl md:text-5xl font-bold mb-16">
-    Testimonios
-  </h2>
-
-  <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto px-6">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
 
     <div class="border border-gray-800 p-6 rounded-2xl">
-      <p class="text-gray-300">“Excelente trabajo, logramos atraer más clientes.”</p>
-      <p class="mt-4 text-sm text-gray-500">José</p>
+      <p>“Excelente trabajo, logramos atraer más clientes.”</p>
+      <p class="mt-4 text-gray-500 text-sm">José</p>
     </div>
 
     <div class="border border-gray-800 p-6 rounded-2xl">
-      <p class="text-gray-300">“Muy profesionales, contenido de alta calidad.”</p>
-      <p class="mt-4 text-sm text-gray-500">Francisco</p>
+      <p>“Muy profesionales, contenido de alta calidad.”</p>
+      <p class="mt-4 text-gray-500 text-sm">Francisco</p>
     </div>
 
     <div class="border border-gray-800 p-6 rounded-2xl">
-      <p class="text-gray-300">“Nos ayudaron a mejorar nuestra imagen y ventas.”</p>
-      <p class="mt-4 text-sm text-gray-500">Sofía</p>
+      <p>“Nos ayudaron a mejorar nuestra imagen y ventas.”</p>
+      <p class="mt-4 text-gray-500 text-sm">Sofía</p>
     </div>
 
   </div>
@@ -141,44 +146,35 @@
 <!-- PLANES -->
 <section class="py-24 bg-white text-black text-center">
 
-  <h2 class="text-3xl md:text-5xl font-bold mb-12">
-    Planes
-  </h2>
+  <h2 class="text-4xl font-bold mb-12">Planes</h2>
 
   <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto px-6">
 
     <div class="border p-8 rounded-2xl">
-      <h3 class="text-xl font-semibold">Básico</h3>
-      <p class="text-gray-500 mt-2">$400 - $600</p>
-      <p class="mt-4 text-sm">Contenido inicial para redes</p>
+      <h3>Básico</h3>
+      <p class="mt-2">$400 - $600</p>
     </div>
 
     <div class="border-2 border-black p-8 rounded-2xl scale-105">
-      <h3 class="text-xl font-semibold">Profesional</h3>
-      <p class="text-gray-500 mt-2">$800 - $1200</p>
-      <p class="mt-4 text-sm">Foto + video + contenido</p>
+      <h3>Profesional</h3>
+      <p class="mt-2">$800 - $1200</p>
     </div>
 
     <div class="border p-8 rounded-2xl">
-      <h3 class="text-xl font-semibold">Campañas</h3>
-      <p class="text-gray-500 mt-2">$1500+</p>
-      <p class="mt-4 text-sm">Contenido + publicidad</p>
+      <h3>Campañas</h3>
+      <p class="mt-2">$1500+</p>
     </div>
 
   </div>
 
 </section>
 
-<!-- CTA -->
+<!-- CTA FINAL -->
 <section class="py-24 text-center">
 
-  <h2 class="text-3xl md:text-5xl font-bold">
-    Empieza a atraer más clientes hoy
+  <h2 class="text-4xl font-bold">
+    Tu negocio puede crecer más
   </h2>
-
-  <p class="text-gray-400 mt-4">
-    Escríbenos y te decimos exactamente qué necesita tu negocio
-  </p>
 
   <a href="https://wa.me/50661161626"
      class="mt-10 inline-block bg-white text-black px-10 py-5 rounded-full">
@@ -187,9 +183,8 @@
 
 </section>
 
-<!-- FOOTER -->
 <footer class="text-center text-gray-500 py-10 text-sm">
-  Gutierrez Studio © 2026 — Costa Rica
+  Gutierrez Studio © 2026
 </footer>
 
 </body>
