@@ -13,19 +13,7 @@
 
   <style>
     body { font-family: 'Inter', sans-serif; }
-
-    /* partículas suaves */
-    .bg-animated {
-      background: radial-gradient(circle at 20% 20%, rgba(255,0,150,0.2), transparent),
-                  radial-gradient(circle at 80% 30%, rgba(0,200,255,0.2), transparent),
-                  radial-gradient(circle at 50% 80%, rgba(255,150,0,0.2), transparent);
-      animation: moveBg 10s infinite alternate;
-    }
-
-    @keyframes moveBg {
-      0% { background-position: 20% 20%, 80% 30%, 50% 80%; }
-      100% { background-position: 30% 30%, 70% 40%, 60% 70%; }
-    }
+    canvas { display: block; }
   </style>
 </head>
 
@@ -46,77 +34,52 @@
 </header>
 
 <!-- HERO -->
-<section class="min-h-screen flex items-center justify-center text-center px-6 relative overflow-hidden bg-animated">
+<section class="min-h-screen flex items-center justify-center text-center px-6 relative overflow-hidden">
+  <canvas id="particles" class="absolute inset-0"></canvas>
 
   <div class="relative z-10 max-w-4xl" data-aos="fade-up">
-
-    <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=400"
-         class="mx-auto mb-8 w-32 h-32 rounded-full object-cover border-4 border-white">
-
-    <h1 class="text-5xl md:text-7xl font-bold leading-tight">
-      Contenido que hace crecer tu negocio
+    <h1 class="text-5xl md:text-7xl font-bold">
+      Creamos contenido que posiciona tu marca
     </h1>
 
     <p class="mt-6 text-gray-300 text-lg">
-      Fotografía, video y campañas para marcas en Costa Rica
+      Fotografía, video y campañas para negocios que quieren crecer en serio
     </p>
 
     <div class="mt-10 flex gap-4 justify-center flex-wrap">
-      <a href="https://wa.me/50661161626"
-         class="bg-white text-black px-8 py-4 rounded-full">
-         Agendar
+      <a href="https://wa.me/50661161626" class="bg-white text-black px-8 py-4 rounded-full">
+        Agendar
       </a>
 
-      <a href="https://instagram.com/gutierrezstudio.co"
-         target="_blank"
+      <a href="https://instagram.com/gutierrezstudio.co" target="_blank"
          class="border border-white px-8 py-4 rounded-full">
          Ver trabajos
       </a>
     </div>
-
   </div>
-
 </section>
 
 <!-- BLOQUE VISUAL -->
 <section class="py-24 px-6">
-
   <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
 
-    <img data-aos="fade-right"
-         src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200"
-         class="rounded-2xl">
+    <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?w=1200"
+         class="rounded-2xl" data-aos="fade-right">
 
     <div data-aos="fade-left">
       <h2 class="text-4xl font-bold">
         No es solo contenido. Es crecimiento.
       </h2>
-
       <p class="mt-6 text-gray-400">
         Creamos contenido que atrae clientes, mejora tu imagen y posiciona tu negocio.
       </p>
     </div>
 
   </div>
-
-</section>
-
-<!-- GRID -->
-<section class="px-6 pb-24">
-
-  <div class="grid md:grid-cols-3 gap-4 max-w-6xl mx-auto">
-
-    <img data-aos="zoom-in" src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800" class="rounded-xl">
-    <img data-aos="zoom-in" data-aos-delay="100" src="https://images.unsplash.com/photo-1492724441997-5dc865305da7?w=800" class="rounded-xl">
-    <img data-aos="zoom-in" data-aos-delay="200" src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800" class="rounded-xl">
-
-  </div>
-
 </section>
 
 <!-- SERVICIOS -->
 <section class="py-32 px-6">
-
   <div class="text-center mb-20">
     <h2 class="text-5xl font-bold">Servicios</h2>
     <p class="text-gray-400 mt-4">Contenido que genera resultados reales</p>
@@ -124,94 +87,108 @@
 
   <div class="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto">
 
-    <div class="p-10 rounded-3xl bg-gradient-to-br from-purple-600/20 border border-purple-500">
+    <div class="p-10 rounded-3xl border border-purple-500 bg-purple-500/10">
       <h3 class="text-2xl font-semibold mb-4">Fotografía</h3>
-      <p class="text-gray-300">Fotos profesionales que venden</p>
+      <p class="text-gray-300">
+        Imágenes que elevan la percepción de tu marca y generan confianza inmediata.
+      </p>
     </div>
 
-    <div class="p-10 rounded-3xl bg-gradient-to-br from-pink-600/20 border border-pink-500">
+    <div class="p-10 rounded-3xl border border-pink-500 bg-pink-500/10">
       <h3 class="text-2xl font-semibold mb-4">Video</h3>
-      <p class="text-gray-300">Reels y contenido visual atractivo</p>
+      <p class="text-gray-300">
+        Videos diseñados para captar atención y convertir en redes sociales.
+      </p>
     </div>
 
-    <div class="p-10 rounded-3xl bg-gradient-to-br from-orange-500/20 border border-orange-400">
+    <div class="p-10 rounded-3xl border border-orange-400 bg-orange-400/10">
       <h3 class="text-2xl font-semibold mb-4">Contenido</h3>
-      <p class="text-gray-300">Presencia constante en redes</p>
+      <p class="text-gray-300">
+        Producción constante para mantener tu negocio visible y creciendo.
+      </p>
     </div>
 
-    <div class="p-10 rounded-3xl bg-gradient-to-br from-green-500/20 border border-green-400">
+    <div class="p-10 rounded-3xl border border-green-400 bg-green-400/10">
       <h3 class="text-2xl font-semibold mb-4">Campañas</h3>
-      <p class="text-gray-300">Publicidad que trae clientes</p>
+      <p class="text-gray-300">
+        Estrategias publicitarias enfocadas en resultados reales.
+      </p>
     </div>
 
   </div>
+</section>
 
+<!-- ANTES / DESPUÉS -->
+<section class="py-32 px-6">
+  <h2 class="text-5xl text-center font-bold mb-20">Resultados reales</h2>
+
+  <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-10">
+    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800"
+         class="rounded-2xl opacity-70">
+    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800"
+         class="rounded-2xl">
+  </div>
 </section>
 
 <!-- CLIENTES -->
 <section class="py-24 bg-white text-black text-center">
+  <h2 class="text-5xl font-bold mb-10">Algunos de nuestros clientes</h2>
 
-  <h2 class="text-5xl font-bold mb-10">
-    Algunos de nuestros clientes
-  </h2>
-
-  <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto text-lg font-semibold">
-
-    <div class="p-6 border rounded-xl">Municipalidad Sarapiquí</div>
+  <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto font-semibold">
     <div class="p-6 border rounded-xl">Super Beto</div>
-    <div class="p-6 border rounded-xl">Ferretería</div>
-    <div class="p-6 border rounded-xl">Agroveterinaria</div>
-
+    <div class="p-6 border rounded-xl">Ferretería Sarapiquí</div>
+    <div class="p-6 border rounded-xl">Agroveterinaria Sarapiquí</div>
+    <div class="p-6 border rounded-xl">Limbert Store</div>
+    <div class="p-6 border rounded-xl">Eventos deportivos</div>
+    <div class="p-6 border rounded-xl">Restaurantes</div>
   </div>
-
 </section>
 
 <!-- PLANES -->
 <section class="py-24 bg-white text-black text-center">
-
   <h2 class="text-5xl font-bold mb-12">Planes</h2>
 
-  <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto px-6">
+  <div class="grid md:grid-cols-4 gap-8 max-w-6xl mx-auto px-6">
 
     <div class="border p-8 rounded-2xl">
       <h3>Básico</h3>
-      <p class="mt-2">₡250,000</p>
-      <p class="mt-4 text-sm">10 fotos + 1 reel</p>
+      <p>₡250,000</p>
+      <p class="text-sm mt-4">10 fotos + 1 reel</p>
     </div>
 
     <div class="border-2 border-black p-8 rounded-2xl scale-105">
       <h3>Profesional</h3>
-      <p class="mt-2">₡500,000</p>
-      <p class="mt-4 text-sm">25 fotos + 3 reels</p>
+      <p>₡500,000</p>
+      <p class="text-sm mt-4">25 fotos + 3 reels</p>
     </div>
 
     <div class="border p-8 rounded-2xl">
-      <h3>Campañas</h3>
-      <p class="mt-2">₡800,000+</p>
-      <p class="mt-4 text-sm">Contenido + Ads</p>
+      <h3>Empresarial</h3>
+      <p>₡800,000+</p>
+      <p class="text-sm mt-4">Contenido + campañas</p>
+    </div>
+
+    <div class="border p-8 rounded-2xl bg-black text-white">
+      <h3>Personalizado</h3>
+      <p>A medida</p>
     </div>
 
   </div>
-
 </section>
 
 <!-- CTA -->
 <section class="py-24 text-center">
-
-  <h2 class="text-4xl font-bold">
-    Empieza hoy
-  </h2>
+  <h2 class="text-4xl font-bold">Empieza hoy</h2>
 
   <a href="https://wa.me/50661161626"
      class="mt-10 inline-block bg-white text-black px-10 py-5 rounded-full">
      WhatsApp
   </a>
-
 </section>
 
-<!-- BOTÓN WHATSAPP -->
+<!-- BOTÓN FLOTANTE -->
 <a href="https://wa.me/50661161626"
-   class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:scale-110 transition z-50">
+   class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg">
    💬
 </a>
 
@@ -219,9 +196,50 @@
   Gutierrez Studio © 2026
 </footer>
 
+<!-- SCRIPTS -->
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <script>
 AOS.init({ duration: 1000, once: true });
+
+// partículas
+const canvas = document.getElementById("particles");
+const ctx = canvas.getContext("2d");
+
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+let particles = [];
+
+for (let i = 0; i < 60; i++) {
+  particles.push({
+    x: Math.random() * canvas.width,
+    y: Math.random() * canvas.height,
+    r: Math.random() * 2,
+    dx: (Math.random() - 0.5),
+    dy: (Math.random() - 0.5)
+  });
+}
+
+function animate() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+  particles.forEach(p => {
+    ctx.beginPath();
+    ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+    ctx.fillStyle = "rgba(255,255,255,0.3)";
+    ctx.fill();
+
+    p.x += p.dx;
+    p.y += p.dy;
+
+    if (p.x < 0 || p.x > canvas.width) p.dx *= -1;
+    if (p.y < 0 || p.y > canvas.height) p.dy *= -1;
+  });
+
+  requestAnimationFrame(animate);
+}
+
+animate();
 </script>
 
 </body>
