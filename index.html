@@ -13,6 +13,19 @@
 
   <style>
     body { font-family: 'Inter', sans-serif; }
+
+    /* partículas suaves */
+    .bg-animated {
+      background: radial-gradient(circle at 20% 20%, rgba(255,0,150,0.2), transparent),
+                  radial-gradient(circle at 80% 30%, rgba(0,200,255,0.2), transparent),
+                  radial-gradient(circle at 50% 80%, rgba(255,150,0,0.2), transparent);
+      animation: moveBg 10s infinite alternate;
+    }
+
+    @keyframes moveBg {
+      0% { background-position: 20% 20%, 80% 30%, 50% 80%; }
+      100% { background-position: 30% 30%, 70% 40%, 60% 70%; }
+    }
   </style>
 </head>
 
@@ -33,27 +46,34 @@
 </header>
 
 <!-- HERO -->
-<section class="h-screen flex items-center justify-center text-center px-6">
+<section class="min-h-screen flex items-center justify-center text-center px-6 relative overflow-hidden bg-animated">
 
-  <div data-aos="fade-up">
-    <h1 class="text-5xl md:text-7xl font-bold max-w-4xl">
+  <div class="relative z-10 max-w-4xl" data-aos="fade-up">
+
+    <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=400"
+         class="mx-auto mb-8 w-32 h-32 rounded-full object-cover border-4 border-white">
+
+    <h1 class="text-5xl md:text-7xl font-bold leading-tight">
       Contenido que hace crecer tu negocio
     </h1>
 
-    <p class="mt-6 text-gray-400 max-w-xl mx-auto">
+    <p class="mt-6 text-gray-300 text-lg">
       Fotografía, video y campañas para marcas en Costa Rica
     </p>
 
-    <div class="mt-10 flex gap-4 justify-center">
-      <a href="https://wa.me/50661161626" class="bg-white text-black px-8 py-4 rounded-full">
-        Agendar
+    <div class="mt-10 flex gap-4 justify-center flex-wrap">
+      <a href="https://wa.me/50661161626"
+         class="bg-white text-black px-8 py-4 rounded-full">
+         Agendar
       </a>
 
-      <a href="https://instagram.com/gutierrezstudio.co" target="_blank"
+      <a href="https://instagram.com/gutierrezstudio.co"
+         target="_blank"
          class="border border-white px-8 py-4 rounded-full">
          Ver trabajos
       </a>
     </div>
+
   </div>
 
 </section>
@@ -73,7 +93,7 @@
       </h2>
 
       <p class="mt-6 text-gray-400">
-        Creamos contenido que atrae clientes y posiciona tu negocio.
+        Creamos contenido que atrae clientes, mejora tu imagen y posiciona tu negocio.
       </p>
     </div>
 
@@ -94,43 +114,34 @@
 
 </section>
 
-<!-- SERVICIOS PRO -->
+<!-- SERVICIOS -->
 <section class="py-32 px-6">
 
-  <div class="max-w-6xl mx-auto text-center mb-20">
-    <h2 class="text-4xl md:text-5xl font-bold">
-      Servicios
-    </h2>
-    <p class="text-gray-400 mt-4 max-w-xl mx-auto">
-      Creamos contenido estratégico que genera resultados reales.
-    </p>
+  <div class="text-center mb-20">
+    <h2 class="text-5xl font-bold">Servicios</h2>
+    <p class="text-gray-400 mt-4">Contenido que genera resultados reales</p>
   </div>
 
   <div class="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto">
 
-    <div class="border border-gray-800 p-10 rounded-3xl hover:border-white transition">
+    <div class="p-10 rounded-3xl bg-gradient-to-br from-purple-600/20 border border-purple-500">
       <h3 class="text-2xl font-semibold mb-4">Fotografía</h3>
-      <p class="text-gray-400 mb-6">Fotos profesionales que atraen clientes.</p>
+      <p class="text-gray-300">Fotos profesionales que venden</p>
     </div>
 
-    <div class="border border-gray-800 p-10 rounded-3xl hover:border-white transition">
+    <div class="p-10 rounded-3xl bg-gradient-to-br from-pink-600/20 border border-pink-500">
       <h3 class="text-2xl font-semibold mb-4">Video</h3>
-      <p class="text-gray-400 mb-6">Videos que captan atención y venden.</p>
+      <p class="text-gray-300">Reels y contenido visual atractivo</p>
     </div>
 
-    <div class="border border-gray-800 p-10 rounded-3xl hover:border-white transition">
+    <div class="p-10 rounded-3xl bg-gradient-to-br from-orange-500/20 border border-orange-400">
       <h3 class="text-2xl font-semibold mb-4">Contenido</h3>
-      <p class="text-gray-400 mb-6">Contenido constante para redes sociales.</p>
+      <p class="text-gray-300">Presencia constante en redes</p>
     </div>
 
-    <div class="border border-gray-800 p-10 rounded-3xl hover:border-white transition">
+    <div class="p-10 rounded-3xl bg-gradient-to-br from-green-500/20 border border-green-400">
       <h3 class="text-2xl font-semibold mb-4">Campañas</h3>
-      <p class="text-gray-400 mb-6">Publicidad digital con resultados.</p>
-    </div>
-
-    <div class="md:col-span-2 border border-gray-800 p-10 rounded-3xl text-center hover:border-white transition">
-      <h3 class="text-2xl font-semibold mb-4">Estrategia</h3>
-      <p class="text-gray-400">Plan digital para hacer crecer tu negocio.</p>
+      <p class="text-gray-300">Publicidad que trae clientes</p>
     </div>
 
   </div>
@@ -140,33 +151,16 @@
 <!-- CLIENTES -->
 <section class="py-24 bg-white text-black text-center">
 
-  <h2 class="text-4xl font-bold mb-6">Clientes</h2>
+  <h2 class="text-5xl font-bold mb-10">
+    Algunos de nuestros clientes
+  </h2>
 
-  <p class="max-w-xl mx-auto text-gray-600">
-    Municipalidad de Sarapiquí, Super Beto, ferreterías y más.
-  </p>
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto text-lg font-semibold">
 
-</section>
-
-<!-- TESTIMONIOS -->
-<section class="py-24 px-6">
-
-  <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
-
-    <div class="border border-gray-800 p-6 rounded-2xl">
-      <p>“Excelente trabajo, logramos atraer más clientes.”</p>
-      <p class="mt-4 text-gray-500 text-sm">José</p>
-    </div>
-
-    <div class="border border-gray-800 p-6 rounded-2xl">
-      <p>“Muy profesionales y resultados reales.”</p>
-      <p class="mt-4 text-gray-500 text-sm">Francisco</p>
-    </div>
-
-    <div class="border border-gray-800 p-6 rounded-2xl">
-      <p>“Aumentamos ventas gracias al contenido.”</p>
-      <p class="mt-4 text-gray-500 text-sm">Sofía</p>
-    </div>
+    <div class="p-6 border rounded-xl">Municipalidad Sarapiquí</div>
+    <div class="p-6 border rounded-xl">Super Beto</div>
+    <div class="p-6 border rounded-xl">Ferretería</div>
+    <div class="p-6 border rounded-xl">Agroveterinaria</div>
 
   </div>
 
@@ -175,23 +169,26 @@
 <!-- PLANES -->
 <section class="py-24 bg-white text-black text-center">
 
-  <h2 class="text-4xl font-bold mb-12">Planes</h2>
+  <h2 class="text-5xl font-bold mb-12">Planes</h2>
 
   <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto px-6">
 
     <div class="border p-8 rounded-2xl">
       <h3>Básico</h3>
-      <p class="mt-2">$400 - $600</p>
+      <p class="mt-2">₡250,000</p>
+      <p class="mt-4 text-sm">10 fotos + 1 reel</p>
     </div>
 
     <div class="border-2 border-black p-8 rounded-2xl scale-105">
       <h3>Profesional</h3>
-      <p class="mt-2">$800 - $1200</p>
+      <p class="mt-2">₡500,000</p>
+      <p class="mt-4 text-sm">25 fotos + 3 reels</p>
     </div>
 
     <div class="border p-8 rounded-2xl">
       <h3>Campañas</h3>
-      <p class="mt-2">$1500+</p>
+      <p class="mt-2">₡800,000+</p>
+      <p class="mt-4 text-sm">Contenido + Ads</p>
     </div>
 
   </div>
@@ -212,7 +209,7 @@
 
 </section>
 
-<!-- BOTÓN FLOTANTE -->
+<!-- BOTÓN WHATSAPP -->
 <a href="https://wa.me/50661161626"
    class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:scale-110 transition z-50">
    💬
