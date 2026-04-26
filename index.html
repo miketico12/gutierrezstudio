@@ -5,8 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gutierrez Studio</title>
 
+  <meta name="description" content="Agencia premium de fotografía, video y campañas en Costa Rica.">
+
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
   <style>
     body { font-family: 'Inter', sans-serif; }
@@ -29,15 +32,15 @@
   </div>
 </header>
 
-<!-- HERO GRANDE -->
+<!-- HERO -->
 <section class="h-screen flex items-center justify-center text-center px-6">
 
-  <div>
-    <h1 class="text-5xl md:text-7xl font-bold leading-tight max-w-4xl">
-      Creamos contenido que hace crecer negocios
+  <div data-aos="fade-up">
+    <h1 class="text-5xl md:text-7xl font-bold max-w-4xl">
+      Contenido que hace crecer tu negocio
     </h1>
 
-    <p class="mt-6 text-gray-400 text-lg max-w-xl mx-auto">
+    <p class="mt-6 text-gray-400 max-w-xl mx-auto">
       Fotografía, video y campañas para marcas en Costa Rica
     </p>
 
@@ -55,22 +58,22 @@
 
 </section>
 
-<!-- BLOQUE VISUAL GRANDE -->
+<!-- BLOQUE VISUAL -->
 <section class="py-24 px-6">
 
   <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
 
-    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200"
+    <img data-aos="fade-right"
+         src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200"
          class="rounded-2xl">
 
-    <div>
+    <div data-aos="fade-left">
       <h2 class="text-4xl font-bold">
         No es solo contenido. Es crecimiento.
       </h2>
 
       <p class="mt-6 text-gray-400">
-        No creamos fotos bonitas. Creamos contenido que atrae clientes, mejora tu imagen
-        y posiciona tu negocio en el mercado.
+        Creamos contenido que atrae clientes y posiciona tu negocio.
       </p>
     </div>
 
@@ -78,30 +81,58 @@
 
 </section>
 
-<!-- GRID VISUAL -->
+<!-- GRID -->
 <section class="px-6 pb-24">
 
   <div class="grid md:grid-cols-3 gap-4 max-w-6xl mx-auto">
 
-    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800" class="rounded-xl">
-    <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7?w=800" class="rounded-xl">
-    <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800" class="rounded-xl">
+    <img data-aos="zoom-in" src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800" class="rounded-xl">
+    <img data-aos="zoom-in" data-aos-delay="100" src="https://images.unsplash.com/photo-1492724441997-5dc865305da7?w=800" class="rounded-xl">
+    <img data-aos="zoom-in" data-aos-delay="200" src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800" class="rounded-xl">
 
   </div>
 
 </section>
 
-<!-- SERVICIOS MINIMAL -->
-<section class="py-24 text-center">
+<!-- SERVICIOS PRO -->
+<section class="py-32 px-6">
 
-  <h2 class="text-4xl font-bold mb-12">Servicios</h2>
+  <div class="max-w-6xl mx-auto text-center mb-20">
+    <h2 class="text-4xl md:text-5xl font-bold">
+      Servicios
+    </h2>
+    <p class="text-gray-400 mt-4 max-w-xl mx-auto">
+      Creamos contenido estratégico que genera resultados reales.
+    </p>
+  </div>
 
-  <div class="space-y-6 text-lg text-gray-300">
-    <p>Fotografía</p>
-    <p>Video</p>
-    <p>Contenido para redes</p>
-    <p>Campañas publicitarias</p>
-    <p>Estrategia digital</p>
+  <div class="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto">
+
+    <div class="border border-gray-800 p-10 rounded-3xl hover:border-white transition">
+      <h3 class="text-2xl font-semibold mb-4">Fotografía</h3>
+      <p class="text-gray-400 mb-6">Fotos profesionales que atraen clientes.</p>
+    </div>
+
+    <div class="border border-gray-800 p-10 rounded-3xl hover:border-white transition">
+      <h3 class="text-2xl font-semibold mb-4">Video</h3>
+      <p class="text-gray-400 mb-6">Videos que captan atención y venden.</p>
+    </div>
+
+    <div class="border border-gray-800 p-10 rounded-3xl hover:border-white transition">
+      <h3 class="text-2xl font-semibold mb-4">Contenido</h3>
+      <p class="text-gray-400 mb-6">Contenido constante para redes sociales.</p>
+    </div>
+
+    <div class="border border-gray-800 p-10 rounded-3xl hover:border-white transition">
+      <h3 class="text-2xl font-semibold mb-4">Campañas</h3>
+      <p class="text-gray-400 mb-6">Publicidad digital con resultados.</p>
+    </div>
+
+    <div class="md:col-span-2 border border-gray-800 p-10 rounded-3xl text-center hover:border-white transition">
+      <h3 class="text-2xl font-semibold mb-4">Estrategia</h3>
+      <p class="text-gray-400">Plan digital para hacer crecer tu negocio.</p>
+    </div>
+
   </div>
 
 </section>
@@ -109,12 +140,10 @@
 <!-- CLIENTES -->
 <section class="py-24 bg-white text-black text-center">
 
-  <h2 class="text-4xl font-bold mb-6">
-    Clientes que confían en nosotros
-  </h2>
+  <h2 class="text-4xl font-bold mb-6">Clientes</h2>
 
   <p class="max-w-xl mx-auto text-gray-600">
-    Municipalidad de Sarapiquí, Super Beto, ferreterías, agroveterinarias y más.
+    Municipalidad de Sarapiquí, Super Beto, ferreterías y más.
   </p>
 
 </section>
@@ -130,12 +159,12 @@
     </div>
 
     <div class="border border-gray-800 p-6 rounded-2xl">
-      <p>“Muy profesionales, contenido de alta calidad.”</p>
+      <p>“Muy profesionales y resultados reales.”</p>
       <p class="mt-4 text-gray-500 text-sm">Francisco</p>
     </div>
 
     <div class="border border-gray-800 p-6 rounded-2xl">
-      <p>“Nos ayudaron a mejorar nuestra imagen y ventas.”</p>
+      <p>“Aumentamos ventas gracias al contenido.”</p>
       <p class="mt-4 text-gray-500 text-sm">Sofía</p>
     </div>
 
@@ -169,23 +198,34 @@
 
 </section>
 
-<!-- CTA FINAL -->
+<!-- CTA -->
 <section class="py-24 text-center">
 
   <h2 class="text-4xl font-bold">
-    Tu negocio puede crecer más
+    Empieza hoy
   </h2>
 
   <a href="https://wa.me/50661161626"
      class="mt-10 inline-block bg-white text-black px-10 py-5 rounded-full">
-     Hablar por WhatsApp
+     WhatsApp
   </a>
 
 </section>
 
+<!-- BOTÓN FLOTANTE -->
+<a href="https://wa.me/50661161626"
+   class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:scale-110 transition z-50">
+   💬
+</a>
+
 <footer class="text-center text-gray-500 py-10 text-sm">
   Gutierrez Studio © 2026
 </footer>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init({ duration: 1000, once: true });
+</script>
 
 </body>
 </html>
