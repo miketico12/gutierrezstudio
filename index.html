@@ -5,10 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gutierrez Studio | Agencia 360</title>
 
-  <meta name="description" content="Agencia 360 en Costa Rica. Contenido, web y estrategia digital para hacer crecer negocios.">
+  <meta name="description" content="Agencia 360 en Costa Rica. Conseguimos clientes con contenido, web y estrategia digital.">
 
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Animaciones -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
   <style>
     body { font-family: 'Inter', sans-serif; }
@@ -20,19 +23,23 @@
 <!-- HERO -->
 <section class="min-h-screen flex flex-col justify-center items-center text-center px-6">
 
-  <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7?w=1200"
-       class="w-full max-w-4xl rounded-xl mb-8 opacity-80">
+  <div class="relative w-full max-w-4xl mb-8" data-aos="fade-up">
+    <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7?w=1200"
+         class="rounded-xl opacity-70">
+    <div class="absolute inset-0 bg-black/40 rounded-xl"></div>
+  </div>
 
-  <h1 class="text-4xl md:text-6xl font-bold max-w-4xl">
-    Hacemos crecer negocios con contenido, web y estrategia digital
+  <h1 class="text-4xl md:text-6xl font-bold max-w-4xl" data-aos="fade-up">
+    Conseguimos clientes para tu negocio con contenido, web y estrategia digital
   </h1>
 
-  <p class="mt-6 text-lg text-gray-300 max-w-2xl">
+  <p class="mt-6 text-lg text-gray-300 max-w-2xl" data-aos="fade-up">
     Agencia 360 en Costa Rica. Creamos sistemas digitales que atraen clientes y aumentan ventas.
   </p>
 
   <a href="https://wa.me/50661161626"
-     class="mt-8 bg-green-500 px-8 py-4 rounded-xl text-lg font-semibold hover:bg-green-600 transition">
+     class="mt-8 bg-green-500 px-8 py-4 rounded-xl text-lg font-semibold hover:bg-green-600 transition"
+     data-aos="fade-up">
      📲 Agendar consulta gratis
   </a>
 
@@ -42,41 +49,39 @@
 
 </section>
 
-<!-- PROBLEMA -->
-<section class="px-6 py-20 max-w-5xl mx-auto text-center">
+<!-- PRUEBA SOCIAL -->
+<section class="text-center py-10" data-aos="fade-up">
+  <p class="text-gray-400">Empresas que confían en nosotros</p>
 
-  <h2 class="text-3xl font-bold mb-6">
-    La mayoría de negocios pierde clientes todos los días
-  </h2>
-
-  <p class="text-gray-300">
-    No por su producto… sino porque no tienen contenido, presencia digital ni estrategia.
-  </p>
-
+  <div class="flex justify-center gap-6 mt-4 text-gray-500 text-sm">
+    <span>+50 clientes</span>
+    <span>+200 proyectos</span>
+    <span>Resultados reales</span>
+  </div>
 </section>
 
-<!-- SOLUCIÓN -->
+<!-- SERVICIOS -->
 <section class="px-6 py-20 bg-neutral-900">
 
   <div class="max-w-6xl mx-auto text-center">
 
-    <h2 class="text-3xl font-bold mb-12">Nuestra solución 360</h2>
+    <h2 class="text-3xl font-bold mb-12" data-aos="fade-up">Nuestra solución 360</h2>
 
     <div class="grid md:grid-cols-3 gap-8">
 
-      <div>
+      <div data-aos="fade-up">
         <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=800" class="rounded-xl mb-4">
         <h3 class="text-xl font-semibold">📸 Contenido</h3>
         <p class="text-gray-400 mt-2">Fotos y videos que convierten en clientes.</p>
       </div>
 
-      <div>
+      <div data-aos="fade-up" data-aos-delay="100">
         <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800" class="rounded-xl mb-4">
         <h3 class="text-xl font-semibold">🌐 Web</h3>
         <p class="text-gray-400 mt-2">Páginas diseñadas para generar ventas.</p>
       </div>
 
-      <div>
+      <div data-aos="fade-up" data-aos-delay="200">
         <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800" class="rounded-xl mb-4">
         <h3 class="text-xl font-semibold">📈 Estrategia</h3>
         <p class="text-gray-400 mt-2">Plan digital para crecer en redes y tráfico.</p>
@@ -88,68 +93,65 @@
 
 </section>
 
-<!-- PLANES -->
-<section class="px-6 py-20 max-w-6xl mx-auto">
+<!-- TESTIMONIOS -->
+<section class="px-6 py-20 max-w-5xl mx-auto text-center">
 
-  <h2 class="text-3xl font-bold text-center mb-12">Planes</h2>
+  <h2 class="text-3xl font-bold mb-12" data-aos="fade-up">Resultados reales</h2>
 
-  <div class="grid md:grid-cols-3 gap-8">
+  <div class="grid md:grid-cols-2 gap-8">
 
-    <div class="border border-gray-700 p-6 rounded-xl">
-      <h3 class="text-xl font-semibold">Starter</h3>
-      <p class="text-gray-400 mt-2">$500 / mes</p>
-      <p class="mt-4 text-gray-300 text-sm">Contenido básico mensual para presencia digital.</p>
+    <div class="border border-gray-700 p-6 rounded-xl" data-aos="fade-up">
+      <p class="text-gray-300">“En menos de 2 meses duplicamos nuestros clientes.”</p>
+      <p class="mt-4 text-sm text-gray-500">Cliente - Negocio Local</p>
     </div>
 
-    <div class="border border-green-500 p-6 rounded-xl scale-105">
-      <h3 class="text-xl font-semibold">Growth</h3>
-      <p class="text-gray-400 mt-2">$1,000 / mes</p>
-      <p class="mt-4 text-gray-300 text-sm">Contenido + estrategia + optimización de redes.</p>
-    </div>
-
-    <div class="border border-gray-700 p-6 rounded-xl">
-      <h3 class="text-xl font-semibold">Business 360</h3>
-      <p class="text-gray-400 mt-2">$1,500+</p>
-      <p class="mt-4 text-gray-300 text-sm">Contenido semanal + web + estrategia completa.</p>
+    <div class="border border-gray-700 p-6 rounded-xl" data-aos="fade-up">
+      <p class="text-gray-300">“La mejor inversión que hemos hecho en marketing.”</p>
+      <p class="mt-4 text-sm text-gray-500">Cliente - Ecommerce</p>
     </div>
 
   </div>
 
 </section>
 
-<!-- POR QUÉ NOSOTROS -->
-<section class="px-6 py-20 bg-neutral-900 text-center">
-
-  <h2 class="text-3xl font-bold mb-6">¿Por qué nosotros?</h2>
-
-  <p class="max-w-2xl mx-auto text-gray-300">
-    No somos solo fotógrafos. Somos una agencia enfocada en hacer crecer negocios con sistemas digitales reales.
-  </p>
-
-</section>
-
 <!-- CTA FINAL -->
 <section class="px-6 py-20 text-center">
 
-  <h2 class="text-3xl font-bold">
-    ¿Listo para crecer tu negocio?
+  <h2 class="text-3xl font-bold" data-aos="fade-up">
+    ¿Listo para conseguir más clientes?
   </h2>
 
-  <p class="text-gray-400 mt-4">
+  <p class="text-gray-400 mt-4" data-aos="fade-up">
     Agenda una consulta y te decimos exactamente qué necesitas.
   </p>
 
   <a href="https://wa.me/50661161626"
-     class="mt-8 inline-block bg-green-500 px-8 py-4 rounded-xl text-lg font-semibold hover:bg-green-600">
+     class="mt-8 inline-block bg-green-500 px-8 py-4 rounded-xl text-lg font-semibold hover:bg-green-600"
+     data-aos="fade-up">
      📲 Hablar por WhatsApp
   </a>
 
 </section>
 
+<!-- BOTÓN FLOTANTE -->
+<a href="https://wa.me/50661161626"
+   class="fixed bottom-6 right-6 bg-green-500 p-4 rounded-full shadow-lg text-xl hover:bg-green-600">
+   💬
+</a>
+
 <!-- FOOTER -->
 <footer class="text-center text-gray-500 py-10 text-sm">
   Gutierrez Studio © 2026 — Agencia 360 Costa Rica
 </footer>
+
+<!-- JS ANIMACIONES -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
 
 </body>
 </html>
